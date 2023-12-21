@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <script defer src="../src/gpa.js"></script>
+     <link rel="stylesheet" href="../mathemizer.css">
+
+     <title>GPA Calc</title>
+</head>
+<body>
+     <!--! GPA calculator -->
+     <div class="category GPACalc" id="GPACalcQ" >
+          <h2 class="h2-category">GPA calculator</h2>
+          
+          <div class="GPACalc__div-grid">
+
+               <!--* Kvinta -->
+               <div class="GPACalc__div-year">
+
+                    <h3 class="GPACalc__h3-year" id="kvintaQ">Kvinta</h3>
+                    <h4>1/2</h4>
+                    <h4>2/2</h4>
+
+                    <div class="GPACalc__div-marks">
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">ČJ</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">AJ</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">NJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">SV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">D</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Z</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">M</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">F</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">CH</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">B</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">IVT</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">VV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">TV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                    </div>
+
+                    <div class="GPACalc__div-marks">
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">ČJ</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">AJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">NJ</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">SV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">D</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Z</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">M</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">F</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">CH</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">B</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">IVT</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">VV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">TV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                    </div>
+               </div>
+
+               <!--* Sexta -->
+               <div class="GPACalc__div-year">
+                    <h3 class="GPACalc__h3-year" id="sextaQ">Sexta</h3>
+                    <h4>1/2</h4>
+                    <h4>2/2</h4>
+
+                    <div class="GPACalc__div-marks">
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">ČJ</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">AJ</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">NJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">SV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">D</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Z</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">M</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">F</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">CH</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">B</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">IVT</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">VV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">TV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                    </div>
+
+                    <div class="GPACalc__div-marks">
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">ČJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">AJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">NJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">SV</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">D</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Z</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">M</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">F</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">CH</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">B</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">IVT</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">VV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">TV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                    </div>
+               </div>
+               
+               <!--* Septima -->
+               <div class="GPACalc__div-year">
+                    <h3 class="GPACalc__h3-year" id="septimaQ">Septima</h3>
+                    <h4>1/2</h4>
+                    <h4>2/2</h4>
+
+                    <div class="GPACalc__div-marks">
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">ČJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">AJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">NJ</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">SV</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">D</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Z</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">M</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">F</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">CH</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">B</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">IVT</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">TV</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Fv</p>
+                              <input type="text" class="GPACalc__input" value="1">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Mv</p>
+                              <input type="text" class="GPACalc__input" value="2">
+                         </div>
+                    </div>
+
+                    <div class="GPACalc__div-marks">
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">ČJ</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">AJ</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">NJ</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">SV</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">D</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Z</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">M</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">F</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">CH</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">B</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">IVT</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">TV</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Fv</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                         <div class="GPACalc__div-subject">
+                              <p class="GPACalc__p-subject">Mv</p>
+                              <input type="text" class="GPACalc__input" value="">
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <h4 id="GPAQ">Your GPA:</h4>
+          <h4 id="GPAMaxQ">Max GPA: 3.8</h4>
+          <h4>2s for 3.75: 3</h4>
+     </div>
+</body>
+</html>

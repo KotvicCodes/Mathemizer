@@ -1,0 +1,160 @@
+/*! reset */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a:any-link {
+     text-decoration: none;
+     color: inherit;
+}
+
+
+/*! Tailswind classes */
+
+.hidden {
+     display: none;
+}
+
+
+/*! General markup */
+
+h1 {
+     font-size: 6rem;
+     margin-bottom: 4rem;
+     
+     display: flex;
+     justify-content: center;
+}
+
+h2 {
+     font-size: 3rem;
+}
+
+.h2-category {
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+input {
+     height: 3rem;
+     width: 10rem;
+     margin-right: 0.8rem;
+}
+
+.category {
+     margin-bottom: 3rem;
+}
+
+.div {
+     display: flex;
+
+}
+
+.div-answers {
+     display: flex;
+     justify-content: center;
+}
+
+.div-answers p {
+     background-color: black;
+     color: white;
+     font-size: 2rem;
+
+     margin: 0 2rem;
+     width: 80rem;
+     height: 5rem;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.div-solution h2 {
+     margin-bottom: 1rem
+}
+
+#divQ {
+     display: grid;
+     grid-template-columns: repeat(6, auto);
+}
+
+#divQ div  {
+     margin: 0 2rem
+}
+
+#rootsQ {
+     text-align: center;
+     margin-top: 3rem
+}
+
+
+/*! Index */
+
+.index__a {
+     background-color: goldenrod;
+
+     padding: 1rem;
+}
+
+.index__a:hover {
+     background-color: darkgoldenrod;
+}
+
+.index__a:active {
+     background-color: lightsalmon
+}
+
+
+/*! GPA calculator */
+
+.GPACalc__div-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+.GPACalc__div-year {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(3, auto);
+}
+
+.GPACalc__h3-year {
+     grid-column: 1 / 3;
+     text-align: center;
+}
+
+.GPACalc h4 {
+     text-align: center;
+}
+
+.GPACalc__input {
+     height: 1.2rem;
+     width: 2rem;
+     text-align: center;
+}
+
+.GPACalc__div-subject {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}
+
+
+/*! MO solver */
+
+.mo-solver button {
+     background-color: blue;
+     color: white;
+
+     height: 2rem;
+     min-width: 5rem;
+     border: none;
+     margin: 5rem 0 0 5rem;
+     padding: 0.5rem;
+}
+
+.mo-solver div {
+     margin-left: 5rem;
+}
