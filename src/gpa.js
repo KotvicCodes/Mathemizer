@@ -20,8 +20,22 @@ function calculateTotal() {
                     total += numericValue
                }
           }
+
+          // save to local storage
+          if(input.value !== "") {
+               localStorage.setItem(input.id, input.value) 
+          }
      })
-   
      let average = 4 - ( (total / notEmpty) - 1)
      GPAQ.innerHTML += average.toFixed(2)
 }
+
+
+//* get data from local storage
+
+const inputs = document.querySelectorAll('.GPACalc__input')
+inputs.forEach(input => {
+     if(input.value === "" && localStorage.getItem(input.id) !== null) {
+          input.value = localStorage.getItem(input.id)
+     }
+})
