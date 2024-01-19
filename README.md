@@ -11,4 +11,4 @@ Use for your own benefit as much as you want!
 
 ### Quadratic Equation Solver
 
-### MO solver
+### Special Primes solver
