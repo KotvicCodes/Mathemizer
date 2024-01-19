@@ -141,6 +141,17 @@ input {
      grid-template-columns: repeat(2, 1fr);
 }
 
+.GPAcalc__div-semester {
+     display: flex;
+     justify-content: center;
+}
+
+.GPAcalc__button {
+     width: 2rem;
+     height: 1rem;
+     margin-left: 1rem;
+}
+
 
 /*! MO solver */
 

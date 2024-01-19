@@ -5,6 +5,14 @@
 const GPAQ = document.getElementById('GPAQ')
 const GPAMaxQ = document.getElementById('GPAMaxQ')
 
+const semester1 = document.querySelector('input[name="options"][value="option1"]')
+const semester2 = document.querySelector('input[name="options"][value="option2"]')
+const semester3 = document.querySelector('input[name="options"][value="option3"]')
+const semester4 = document.querySelector('input[name="options"][value="option4"]')
+const semester5 = document.querySelector('input[name="options"][value="option5"]')
+const semester6 = document.querySelector('input[name="options"][value="option6"]')
+const currentSemester = document.querySelector('input[name="options"]:checked')
+
 
 //* Get data from local storage
 
@@ -41,7 +49,38 @@ function calculateTotal() {
 
 inputs.forEach(input => {
      input.addEventListener("input", (e) => {
-          calculateTotal()
+reloadAll()
      })
 })
-calculateTotal()
+
+
+//* Max GPA
+
+function calculateMaxGPA() {
+     let total = 0
+   
+     inputs.forEach(input => {
+          const value = input.value.trim()
+          if (value !== "") {
+               const numericValue = parseFloat(value)
+               if (!isNaN(numericValue)) {
+                    total += numericValue
+               }
+               console.log(total)
+          }
+          if(value === "") {
+               total += 1
+          }
+     })
+     let average = 4 - ( (total / 80) - 1)
+     GPAMaxQ.innerHTML = average.toFixed(2)
+}
+
+
+//* Render page
+
+function reloadAll() {
+     calculateMaxGPA()
+     calculateTotal()
+}
+reloadAll()
