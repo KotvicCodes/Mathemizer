@@ -5,9 +5,8 @@ Use for your own benefit as much as you want!
 ## Bugs and Issues
 
 ### GPA Calc
-1. Make calc compute your max GPA based on inputs on top of your page - based on which semester are you in  
-2. Do something about the 2s for x GPA at the bottom of the page as it is hardcoded and personalized  
-3. Make calc
+1. Make calc compute your max GPA based on how many inputs are in semester instead of hardcoding it
+2. Make some UI where you can choose how many marks and from which subjects
 
 ### Quadratic Equation Solver
 
