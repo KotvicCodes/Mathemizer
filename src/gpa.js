@@ -29,12 +29,39 @@ let semesterDiv6Inputs = semesterDiv6Q.querySelectorAll('input')
 
 //! Render data from local storage
 
+//* Render marks
+
 const inputs = document.querySelectorAll('.GPACalc__input')
 inputs.forEach(input => {
      if(input.value === "" && localStorage.getItem(input.id) !== null) {
           input.value = localStorage.getItem(input.id)
      }
 })
+
+
+//* Render semester
+
+if(localStorage.getItem("currentSemester") !== null) {
+     const currentSemester = localStorage.getItem("currentSemester")
+     if(currentSemester === "option1") {
+          semester1.checked = true
+     }
+     else if(currentSemester === "option2") {
+          semester2.checked = true
+     }
+     else if(currentSemester === "option3") {
+          semester3.checked = true
+     }
+     else if(currentSemester === "option4") {
+          semester4.checked = true
+     }
+     else if(currentSemester === "option5") {
+          semester5.checked = true
+     }
+     else if(currentSemester === "option6") {
+          semester6.checked = true
+     }
+}
 
 
 //! Current GPA
@@ -124,8 +151,9 @@ function reloadAll() {
 const semesterButtons = document.querySelectorAll('.GPAcalc__button')
 
 semesterButtons.forEach(button => {
-     button.addEventListener("click", (unused) => {
+     button.addEventListener("click", (button) => {
           reloadAll()
+          localStorage.setItem("currentSemester", button.target.value)
      })
 })
 
@@ -133,7 +161,7 @@ semesterButtons.forEach(button => {
 //* Reload upon changing a value
 
 inputs.forEach(input => {
-     input.addEventListener("input", (e) => {
+     input.addEventListener("input", (unused) => {
           reloadAll()
      })
 })

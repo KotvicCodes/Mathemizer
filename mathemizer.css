@@ -111,6 +111,8 @@ input {
 /*! GPA calculator */
 
 .GPACalc__div-grid {
+     margin: 0 1rem;
+
      display: grid;
      grid-template-columns: repeat(3, 1fr);
 }
