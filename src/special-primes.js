@@ -181,6 +181,7 @@ const foundSpecialPrimesQ = document.getElementById('foundSpecialPrimesQ')
 const findPrimeButtonQ = document.getElementById('findPrimeButtonQ')
 
 findPrimeButtonQ.addEventListener('click', (prime) => {
+     foundSpecialPrimesQ.innerHTML = ""
      let sumPn = 2
      primes.forEach((prime) => {
           let k = sumPn / prime
