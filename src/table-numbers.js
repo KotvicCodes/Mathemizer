@@ -16,13 +16,19 @@ const currentSum = 0
 findSequenceButtonQ.addEventListener('click', function() {
      const desiredSum = parseInt(inputQ.value.trim())
      foundSequenceQ.innerHTML = ''
-     findSequences(desiredSum)
+     executeOrder(desiredSum)
 })
 
 
 //* Main function
 
-function findSequences(target, currentSequence = [], currentSum = 0, start = 1) {
+function executeOrder(target) {
+     for(let j = 1; j <= target; j++) {
+          findSequences(target, j)
+     }
+}
+
+function findSequences(target, start, currentSequence = [], currentSum = 0) {
      if(currentSum === target) {
           foundSequenceQ.innerHTML += `<p>${currentSequence.join(' ')}</p>`
           return
@@ -31,7 +37,7 @@ function findSequences(target, currentSequence = [], currentSum = 0, start = 1) 
      for(let i = start; i <= target; i++) {
           if(i % currentSum === 0 || i === 1) {
                if(currentSum + i <= target) {
-                    findSequences(target, currentSequence.concat(i), currentSum + i, i + 1)
+                    findSequences(target,  i + 1, currentSequence.concat(i), currentSum + i,)
                }
           }
      }
