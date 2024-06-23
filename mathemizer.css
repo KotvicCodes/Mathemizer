@@ -1,4 +1,4 @@
-/*! reset */
+/*! Reset */
 
 * {
      margin: 0;
@@ -94,7 +94,7 @@ input {
 /*! Index */
 
 .index__a {
-     background-color: goldenrod;
+     background-color: orange;
 
      padding: 1rem;
 }
@@ -122,7 +122,7 @@ input {
 }
 
 
-/*! GPA calculator */
+/** GPA calculator */
 
 .GPACalc__div-grid {
      margin: 0 1rem;
@@ -169,19 +169,19 @@ input {
 }
 
 
-/*! MO solver */
+/** Special primes */
 
-.mo-solver button {
+.special-primes button {
      background-color: blue;
      color: white;
 
      height: 2rem;
      min-width: 5rem;
      border: none;
-     margin: 5rem 0 0 5rem;
+     margin: 1rem;
      padding: 0.5rem;
 }
 
-.mo-solver div {
-     margin-left: 5rem;
+.special-primes div {
+     margin-left: 1rem;
 }
