@@ -108,6 +108,20 @@ input {
 }
 
 
+/*! Subcategories */
+
+.sub__a {
+     background-color: orange;
+
+     margin-bottom: 1rem;
+     padding: 1rem;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
 /*! GPA calculator */
 
 .GPACalc__div-grid {
