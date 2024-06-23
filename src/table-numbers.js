@@ -6,7 +6,6 @@ const inputQ = document.getElementById('inputQ')
 const findSequenceButtonQ = document.getElementById('findSequenceButtonQ')
 const foundSequenceQ = document.getElementById('foundSequenceQ')
 
-const currentSum = 0
 const sequenceArray = []
 
 //! Solver
@@ -17,6 +16,7 @@ findSequenceButtonQ.addEventListener('click', function() {
      const desiredSum = parseInt(inputQ.value.trim())
      foundSequenceQ.innerHTML = ''
      executeOrder(desiredSum)
+     
      sequenceArray.sort((a, b) => b.length - a.length)
      sequenceArray.forEach(sequence => {
           foundSequenceQ.innerHTML += `<p><b>${sequence.length}: </b>${sequence.string}</p>`
