@@ -14,9 +14,10 @@ const sequenceArray = []
 
 findSequenceButtonQ.addEventListener('click', function() {
      const desiredSum = parseInt(inputQ.value.trim())
-     foundSequenceQ.innerHTML = ''
+     foundSequenceQ.innerHTML = ""
+     sequenceArray.length = 0
      executeOrder(desiredSum)
-     
+
      sequenceArray.sort((a, b) => b.length - a.length)
      sequenceArray.forEach(sequence => {
           foundSequenceQ.innerHTML += `<p><b>${sequence.length}: </b>${sequence.string}</p>`
